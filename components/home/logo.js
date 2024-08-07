@@ -41,7 +41,6 @@ export const Logo=({data,logo})=>{
           </nav>
     </>)
 }
-
 Logo.defaultProps={
     SITE_URL:  process.env.NEXT_PUBLIC_OS,
     data:[{image:'images/4.jpeg',title:'Hydraulic',sub_title:"Engineering",url:process.env.NEXT_PUBLIC_HE},
