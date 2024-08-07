@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+/* logo */
+#hover_logo_1,#hover_logo_2{
+  transition: all 0.8s ease;
+}
+
+#hover_logo_1:hover #item_1{
+  background-color: #1b4175;
+}
+#hover_logo_2:hover #item_2{
+  background-color: #1b4175;
+}
+#hover_logo_1:hover {
+  cursor: pointer;
+  filter: saturate(4);
+}
+#hover_logo_2:hover {
+  cursor: pointer;
+  filter: saturate(4);
+}
+#hover_logo_1:hover #logo_sub_title_1{
+  transition: all 0.5s ease-out;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+#hover_logo_2:hover #logo_sub_title_2{
+  transition: all 0.5s ease-out;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+.bg-url{
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  filter: saturate(2);
+}
+.bg-url-logo{
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: contain;
+}
