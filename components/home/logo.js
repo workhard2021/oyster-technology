@@ -6,7 +6,7 @@ export const Logo=({data,logo})=>{
           <nav className='relative top-0 left-0 w-screen'>
             <div className="w-full fixed top-0 left-0 flex justify-between z-10 md:p-8 p-4">
                <div className="w-[50%] md:h-[70px] flex justify-start items-stretch">
-                     <div className="cursor-pointer md:w-[140px] w-[110px] md:h-[70px] flex">
+                     <div className="cursor-pointer md:w-[140px] w-[110px] md:h-[100px] flex">
                        <div href={'/'} className="w-full h-full bg-url-logo" style={{backgroundImage:`url(${logo})`}} />
                      </div>
                      {/* <h1 className="text-sm m-4 md:inline-block hidden text-white">Spécialiste des missions hautes compétences IT</h1> */}
@@ -43,7 +43,7 @@ export const Logo=({data,logo})=>{
 }
 Logo.defaultProps={
     SITE_URL:  process.env.NEXT_PUBLIC_OS,
-    data:[{image:'images/4.jpeg',title:'Hydraulic',sub_title:"Engineering",url:process.env.NEXT_PUBLIC_HE},
+    data:[{image:'images/3.jpeg',title:'Hydraulic',sub_title:"Engineering",url:process.env.NEXT_PUBLIC_HE},
           {image:'images/11.jpeg',title:'Digital',sub_title:"Factory",url:process.env.NEXT_PUBLIC_IT},
     ],
     logo:'images/logo.png',
