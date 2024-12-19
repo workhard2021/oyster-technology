@@ -5,14 +5,14 @@ export const Logo=({data,logo})=>{
     return (<>
           <nav className='relative top-0 left-0 w-screen h-screen'>
             <div className="w-full fixed -top-5 left-0 flex justify-between z-50 md:p-8 p-4">
-               <div className="w-[50%] md:h-[70px] flex justify-start items-stretch">
-                     <div className="cursor-pointer md:w-[140px] w-[110px] md:h-[100px] flex">
+               <div className="bg-transparent w-[50%] md:h-[70px] flex justify-start items-center">
+                     <div className="cursor-pointer w-[140px] h-[100px] flex">
                        <div href={'/'} className="w-full h-full bg-url-logo" style={{backgroundImage:`url(${logo})`}} />
                      </div>
                      {/* <h1 className="text-sm m-4 md:inline-block hidden text-white">Spécialiste des missions hautes compétences IT</h1> */}
                </div>
                <div className="w-[50%] flex justify-end items-center">
-                 <Link target={'_blank'} href="https://web.facebook.com">
+                 {/*  <Link target={'_blank'} href="https://web.facebook.com">
                          <BsFacebook className="md:hover:text-gray-200 hover:text-blue-900 transition-all duration-75 inline-block m-3 md:text-white text-blue-800" size={25}/>
                   </Link>
                   <Link  target={'_blank'} href="https://web.facebook.com">
@@ -21,7 +21,7 @@ export const Logo=({data,logo})=>{
                   <Link  target={'_blank'} href="https://web.facebook.com">
                          <BsTwitter className="md:hover:text-gray-200 hover:text-blue-900 transition-all duration-75 inline-block m-3 md:text-white text-blue-800" size={25}/>
                   </Link>
-                  {/* <Link  target={'_blank'} href="https://web.facebook.com">
+                  <Link  target={'_blank'} href="https://web.facebook.com">
                          <SiYoutubestudio className="hover:text-gray-200 transition-all duration-75 inline-block m-3 text-white" size={28}/>
                   </Link>*/}
                 </div>
@@ -42,7 +42,7 @@ export const Logo=({data,logo})=>{
 }
 Logo.defaultProps={
     SITE_URL:  process.env.NEXT_PUBLIC_OS,
-    data:[{image:'images/3.jpeg',title:'Hydraulic',sub_title:"Engineering",url:process.env.NEXT_PUBLIC_HE},
+    data:[{image:'images/water.jpg',title:'Hydraulic',sub_title:"Engineering",url:process.env.NEXT_PUBLIC_HE},
           {image:'images/11.jpeg',title:'Digital',sub_title:"Factory",url:process.env.NEXT_PUBLIC_IT},
     ],
     logo:'images/logo.png',
