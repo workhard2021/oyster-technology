@@ -4,7 +4,7 @@ import {SiYoutubestudio} from 'react-icons/si';
 export const Logo=({data,logo})=>{
     return (<>
           <nav className='relative top-0 left-0 w-screen h-screen'>
-            <div className="w-full fixed -top-5 left-0 flex justify-between z-50 md:p-8 p-4">
+            <div className="w-full fixed -top-2 left-0 flex justify-between z-50 md:p-8 p-4">
                <div className="bg-transparent w-[50%] md:h-[70px] flex justify-start items-center">
                      <div className="cursor-pointer w-[140px] h-[100px] flex">
                        <div href={'/'} className="w-full h-full bg-url-logo" style={{backgroundImage:`url(${logo})`}} />
